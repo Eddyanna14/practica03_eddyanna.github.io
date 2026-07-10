@@ -1,0 +1,179 @@
+* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #FFE5B4;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ff6600; /* naranja */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #cc5200; /* naranja oscuro */
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+  background-image: url('https://via.placeholder.com/1200x400?text=Pizza+Deliziosa');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #d94f30;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Section general */
+section {
+  padding: 20px;
+}
+
+/* Grid para cards */
+.grid, .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* centrado horizontal */
+  padding: 20px 0;
+}
+
+.cards {
+  justify-content: space-around; /* distribuye las cards */
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250-280px; /* puedes usar 250 o 280 */
+  padding: 15px 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Promos */
+.promos {
+  background-color: #fff3e0;
+  border-left: 4px solid #ffa726;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #d94f30;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Mapa o sección centrada */
+.map {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid, .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+.hero {
+  background-image: url('https://via.placeholder.com/1200x400?text=Pizza+Deliziosa');
+  background-size: cover;
+  background-position: center;
+  color: black;  /* texto negro */
+  padding: 60px 20px;
+  text-align: center;
+}
+.promos {
+  background-color: #fff3e0;         
+  border-left: 4px solid #ffa726;    
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  color: #333;                       
+  font-weight: 600;                 
+}
